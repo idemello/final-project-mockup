@@ -6,7 +6,7 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 export const Contacts = new Mongo.Collection('Contacts');
 
 /**
- * Create the schema for Stuff
+ * Create the schema for Contacts
  */
 export const ContactsSchema = new SimpleSchema({
   first: {
