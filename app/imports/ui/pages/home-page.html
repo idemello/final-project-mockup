@@ -1,7 +1,8 @@
 <template name="Home_Page">
 
-  <div class="ui secondary  menu">
- 
+  <div style = "margin-top: 20px;" class="ui container">
+    <div class="ui secondary  menu">
+
       <select class="ui search dropdown">
         <option value="">Sort By</option>
         <option value="Price">Price (Ascending)</option>
@@ -10,65 +11,74 @@
         <option value="EventDate">Event Date</option>
       </select>
 
-    <div class="left menu">
-      <div class="item">
-        <div class="ui icon input">
-          <input type="text" placeholder="Search Events...">
-          <i class="search link icon"></i>
+      <div class="left menu">
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Search Events...">
+            <i class="search link icon"></i>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px" class="ui celled table">
-      <thead>
-      <tr>
-        <th>Price</th>
-        <th>Event Name</th>
-        <th>Event Date</th>
-        <th>Seller Location</th>
-        <th>UH Email</th>
-        <th>Event Details</th>
 
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>$75</td>
-        <td>Marshmello</td>
-        <td>4/8/2017</td>
-        <td>Waikiki</td>
-        <td>idemello@hawaii.edu</td>
-        <td><a href=#>More Info</a></td>
-      </tr>
-      <tr>
-        <td>$10</td>
-        <td>A Guy Playing in my Garage</td>
-        <td>3/15/3000</td>
-        <td>Waianae</td>
-        <td>scoobydoo@hawaii.edu</td>
-        <td><a href=#>More Info</a></td>
-      </tr>
-      <tr>
-        <td>$420</td>
-        <td>Bob Marley and the Wailers</td>
-        <td>4/20/2017</td>
-        <td>Manoa</td>
-        <td>CheechNChong@hawaii.edu</td>
-        <td><a href=#>More Info</a></td>
-      </tr>
-      <tr>
-        <td>$45</td>
-        <td>Mackelmore</td>
-        <td>7/15/18</td>
-        <td>Downtown</td>
-        <td>Mmore@hawaii.edu</td>
-        <td><a href=#>More Info</a></td>
-      </tr>
+    <div class="ui container">
+      <table style="margin-top: 20px" class="ui celled table">
+        <thead>
+        <tr>
+          <th>Price</th>
+          <th># Available</th>
+          <th>Event Name</th>
+          <th>Event Date</th>
+          <th>Seller Location</th>
+          <th>UH Email</th>
+          <th>Event Details</th>
 
-      </tbody>
-    </table>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>$75</td>
+          <td>2</td>
+          <td>Marshmello</td>
+          <td>4/8/2017</td>
+          <td>Waikiki</td>
+          <td>idemello@hawaii.edu</td>
+          <td><a href=#>More Info</a></td>
+        </tr>
+        <tr>
+          <td>$10</td>
+          <td>3</td>
+          <td>A Guy Playing in my Garage</td>
+          <td>3/15/3000</td>
+          <td>Waianae</td>
+          <td>scoobydoo@hawaii.edu</td>
+          <td><a href=#>More Info</a></td>
+        </tr>
+        <tr>
+          <td>$420</td>
+          <td>8</td>
+          <td>Bob Marley and the Wailers</td>
+          <td>4/20/2017</td>
+          <td>Manoa</td>
+          <td>CheechNChong@hawaii.edu</td>
+          <td><a href=#>More Info</a></td>
+        </tr>
+        <tr>
+          <td>$45</td>
+          <td>7</td>
+          <td>Mackelmore</td>
+          <td>7/15/18</td>
+          <td>Downtown</td>
+          <td>Mmore@hawaii.edu</td>
+          <td><a href=#>More Info</a></td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
   {{else}}
     {{> Loading}}
   {{/if}}
