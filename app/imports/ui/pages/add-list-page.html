@@ -1,0 +1,20 @@
+<template name="Add_List_Page">
+  <div style="margin-top: 20px" class="ui container">
+    <form class="ui form contact-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Add New Listing</h4>
+        <div class="field">
+          {{> Text_Form_Control label="Price" required=true errorMessage=(fieldError "price")}}
+        </div>
+      <div class="field">
+        {{> Text_Form_Control label="EventName" required=true errorMessage=(fieldError "sellerlocation")}}
+      </div>
+        <div class="field">
+          {{> Text_Form_Control label="SellerLocation" required=true errorMessage=(fieldError "sellerlocation")}}
+        </div>
+      <div class="field">
+        {{> Text_Form_Control label="Telephone" required=true errorMessage=(fieldError "telephone")}}
+      </div>
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+</template>
