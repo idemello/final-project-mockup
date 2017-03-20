@@ -22,6 +22,13 @@ FlowRouter.route('/add-listing', {
   },
 });
 
+FlowRouter.route('/admin-home', {
+  name: 'Admin_Home_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Admin_Home_Page' });
+  },
+});
+
 FlowRouter.route('/create-profile', {
   name: 'Create_Profile_Page',
   action() {
@@ -40,6 +47,28 @@ FlowRouter.route('/add-contact', {
   name: 'Add_Contact_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Add_Contact_Page' });
+  },
+});
+
+FlowRouter.route('/detailed-event', {
+  name: 'Detailed_Event_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Detailed_Event_Page' });
+  },
+});
+
+
+FlowRouter.route('/login', {
+  name: 'Login_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Login_Page' });
+  },
+});
+
+FlowRouter.route('/user-home', {
+  name: 'User_Home_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'User_Home_Page' });
   },
 });
 
