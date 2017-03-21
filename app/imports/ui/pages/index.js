@@ -19,10 +19,5 @@ import './edit-contact-page.js';
 import './home-page.html';
 import './home-page.js';
 
-
-import './login-page.html';
-import './login-page.js';
-
-
 import './user-home-page.html';
 import './user-home-page.js';
